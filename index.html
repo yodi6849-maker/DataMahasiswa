@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📝 Input Data Mahasiswa</h1>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Isi Data Mahasiswa</h2>
+            <form id="data-mahasiswa-form">
+                <div class="form-group">
+                    <label for="nim">NIM:</label>
+                    <input type="text" id="nim" name="nim" required placeholder="Cth: 12345678">
+                </div>
+                <div class="form-group">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required placeholder="Nama Lengkap">
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat:</label>
+                    <textarea id="alamat" name="alamat" required placeholder="Alamat Domisili"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="no_hp">No. HP:</label>
+                    <input type="tel" id="no_hp" name="no_hp" placeholder="Cth: 081234567890">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="nama@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="tempat_lahir">Tempat Lahir (Kota):</label>
+                    <select id="tempat_lahir" name="tempat_lahir" required>
+                        <option value="">-- Pilih Kota --</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Bandung">Bandung</option>
+                        <option value="Surabaya">Surabaya</option>
+                        <option value="Yogyakarta">Yogyakarta</option>
+                        <option value="Medan">Medan</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tanggal_lahir">Tanggal Lahir:</label>
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+                </div>
+                <div class="form-group">
+                    <label for="hobi">Hobi:</label>
+                    <select id="hobi" name="hobi" required>
+                        <option value="">-- Pilih Hobi --</option>
+                        <option value="Membaca">Membaca</option>
+                        <option value="Olahraga">Olahraga</option>
+                        <option value="Memasak">Memasak</option>
+                        <option value="Coding">Coding</option>
+                        <option value="Travelling">Travelling</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="pria" name="gender" value="Pria" required>
+                        <label for="pria">Pria</label>
+                        <input type="radio" id="wanita" name="gender" value="Wanita">
+                        <label for="wanita">Wanita</label>
+                    </div>
+                </div>
+                <button type="submit">Simpan Data</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section class="table-container">
+            <h2>Data Mahasiswa (Dummy)</h2>
+            <div class="table-wrapper">
+                <table id="data-mahasiswa-table">
+                    <thead>
+                        <tr>
+                            <th>NIM</th>
+                            <th>Nama</th>
+                            <th>Alamat</th>
+                            <th>No. HP</th>
+                            <th>Email</th>
+                            <th>TTL</th>
+                            <th>Hobi</th>
+                            <th>Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2023001</td>
+                            <td>Budi Santoso</td>
+                            <td>Jl. Merdeka No. 10</td>
+                            <td>0812xxxxxx</td>
+                            <td>budi@mail.com</td>
+                            <td>Jakarta, 12/01/2002</td>
+                            <td>Olahraga</td>
+                            <td>Pria</td>
+                        </tr>
+                        <tr>
+                            <td>2023002</td>
+                            <td>Siti Aminah</td>
+                            <td>Perum. Indah Blok C5</td>
+                            <td>0857xxxxxx</td>
+                            <td>siti@mail.com</td>
+                            <td>Bandung, 25/05/2003</td>
+                            <td>Membaca</td>
+                            <td>Wanita</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Data Mahasiswa</p>
+    </footer>
+</body>
+</html>
